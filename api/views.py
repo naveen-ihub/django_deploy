@@ -66,12 +66,13 @@ def setup_browser():
         "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
     ]
 
-    proxy,user_agent = get_random_proxy(proxy_list,user_agent_list)
+    #proxy,user_agent = get_random_proxy(proxy_list,user_agent_list)
 
-    print(proxy,user_agent)
+    #print(proxy,user_agent)
 
-    browser = playwright.chromium.launch(headless=True,
-                                         proxy=proxy)
+    #browser = playwright.chromium.launch(headless=True,
+      #                                   proxy=proxy)
+    browser = playwright.chromium.launch(headless=True)
     page = browser.new_page(user_agent=user_agent)
     return playwright, browser, page
 
