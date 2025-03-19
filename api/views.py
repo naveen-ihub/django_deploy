@@ -73,7 +73,8 @@ def setup_browser():
     #browser = playwright.chromium.launch(headless=True,
       #                                   proxy=proxy)
     browser = playwright.chromium.launch(headless=True)
-    page = browser.new_page(user_agent=user_agent)
+    #page = browser.new_page(user_agent=user_agent)
+    page = browser.new_page()
     return playwright, browser, page
 
 def freelancer_scrapper(search_query):
