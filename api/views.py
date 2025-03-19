@@ -57,6 +57,15 @@ def get_random_proxy(proxy_list,user_agent_list):
 def setup_browser():
     playwright = sync_playwright().start()
 
+    proxy_list = [{'server': 'dc.oxylabs.io:8000', 'username': 'naveen_kY5lG', 'password': 'ea8vWq+NiqjurjkQ'}, {'server': 'dc.oxylabs.io:8000', 'username': 'Gudbadugly_0cqzZ', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'ihubsns_zQVFs', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'Testing_LoNLf', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'HarisankarJ_a5Nj2', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'akash_tNgmM', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'Akilihub_Gy3Z1', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'mugilan_eGYDD', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'RNS_Sanjay_MZyzH', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'lathees_6pZh3', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'shruthi_1vvlk', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'kavin_bakyaraj_5cQ3F', 'password': 'SNS+ihub=123'}, {'server': 'dc.oxylabs.io:8000', 'username': 'Ajay_Chakravarthi_B5RJy', 'password': 'SNS+ihub=123'}]
+
+    user_agent_list = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.5993.120 Safari/537.36",
+        "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/94.0",
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1"
+    ]
+
     proxy,user_agent = get_random_proxy(proxy_list,user_agent_list)
 
     print(proxy,user_agent)
